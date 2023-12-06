@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body {  
+    
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 10px 20px 5px 20px ;
+}
+
+.calculator {
+    width: 310px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.699);
+    margin: 0,auto;
+    top: 20px;
+    position:relative;
+    border-radius: 12px;
+    box-shadow: 4px 4px 30px #00000056;
+    
+}
+
+#result{
+    margin: 15px;
+    height: 100px;
+    background-color: rgb(178, 252, 30);
+    border-radius: 12px;
+}
+
+#history{
+    text-align: right;
+    height: 25px;
+    padding-right: 20px;
+    margin: 0,20px;
+    padding-top:20px ;
+    font-size: 20px;
+    color: #5c5a5a;
+}
+
+#output{
+    text-align: right;
+    height: 50px;
+    padding-right: 20px;
+    padding-top: 25px;
+    margin: 10,20px;
+    font-size: 30px;
+    color: #000;
+}
+#keyboard{
+    height: 400px; 
+}
+
+.operator, .number, .empty{
+    width: 55px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border-radius: 20%;
+    border-width: 0;
+    font-weight:bold;
+    font-size: 18px; 
+}
+
+.empty{
+    background-color: rgba(0, 0, 0, 0);
+}
+.operator{
+    background-color:rgb(245,146,62);
+}
+.del
+{
+    background-color: rgba(231, 9, 9, 0.897);
+}
+.clr{
+    background-color: #159e09;
+}
+.number, .operator{
+    cursor: pointer;  
+}
+.operator:active, .number:active{
+    font-size: 20px;
+    background-color: #00000070;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+@media(max-width:354px)
+{
+    .operator, .number, .empty{
+        width: 45px;
+        height: 40px;
+        margin: 10px;
+        float: left;
+        border-radius: 20%;
+        border-width: 0;
+        font-weight:bold;
+        font-size: 12px; 
+    }
+}
+@media(max-width:310px){
+    .operator, .number, .empty{
+        width: 35px;
+        height: 30px;
+        margin: 10px;
+        float: left;
+        border-radius: 20%;
+        border-width: 0;
+        font-weight:bold;
+        font-size: 10px; 
+    }
+}
